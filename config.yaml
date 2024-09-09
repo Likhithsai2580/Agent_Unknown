@@ -1,0 +1,62 @@
+default_model: gpt-3.5-turbo
+available_models:
+  OpenAI:
+    - gpt-3.5-turbo
+    - gpt-4
+  Anthropic:
+    - claude-v1
+    - claude-instant-v1
+  Google:
+    - palm/chat-bison
+  Cohere:
+    - command
+    - command-light
+    - command-nightly
+  AI21:
+    - j2-light
+    - j2-mid
+    - j2-ultra
+  Ollama:
+    - llama2
+    - mistral
+    - codellama
+  Replicate:
+    - llama-2-70b-chat
+  HuggingFace:
+    - facebook/opt-1.3b
+    - facebook/opt-13b
+    - facebook/opt-66b
+    - bigscience/bloom
+    - bigscience/bloomz
+    - google/flan-t5-xxl
+    - google/flan-ul2
+    - EleutherAI/gpt-neox-20b
+    - EleutherAI/pythia-12b
+    - EleutherAI/gpt-j-6b
+  Azure:
+    - azure/gpt-35-turbo
+    - azure/gpt-4
+  Groq:
+    - mixtral-8x7b-32768
+    - llama2-70b-4096
+system_message: "You are an AI assistant capable of writing and executing code in various languages, analyzing images, providing precise pixel coordinates, performing various computer tasks, and interacting via voice commands. Always ask for user confirmation before executing any code that could modify the system."
+plugin_dir: plugins
+dependencies:
+  - opencv-python
+  - pyautogui
+  - requests
+  - beautifulsoup4
+  - psutil
+  - nodejs
+  - gcc
+  - g++
+  - rich
+  - SpeechRecognition
+  - pyttsx3
+  - clipboard
+  - PyQt6
+  - transformers
+  - torch
+  - ollama
+  - groq
+  - litellm
