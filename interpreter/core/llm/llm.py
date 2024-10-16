@@ -108,7 +108,7 @@ class Llm:
         if model in [
             "claude-3.5",
             "claude-3-5",
-            "claude-3.5-sonnet",
+            "claude-3-5-sonnet",
             "claude-3-5-sonnet",
         ]:
             model = "claude-3-5-sonnet-20240620"

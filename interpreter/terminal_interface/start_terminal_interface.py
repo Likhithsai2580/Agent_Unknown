@@ -299,6 +299,13 @@ def start_terminal_interface(interpreter):
             "help_text": "Run OI in stdin mode",
             "type": bool,
         },
+        {
+            "name": "plugin_dir",
+            "nickname": "pd",
+            "help_text": "directory to load plugins from",
+            "type": str,
+            "default": "plugins",
+        },
     ]
 
     if "--stdin" in sys.argv and "--plain" not in sys.argv:
